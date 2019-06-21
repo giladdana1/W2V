@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		Console.WriteLine("insert a string");
+		String stringToReverse = Console.ReadLine(); 
+		
+		char[] chars = stringToReverse.ToCharArray();  
+   		for (int i = 0, j = stringToReverse.Length - 1; i < j; i++, j--) {  
+        	char c = chars[i];  
+        	chars[i] = chars[j];  
+        	chars[j] = c;  
+    	}  
+		string s = new string(chars);
+		Console.WriteLine("{0}",s);
+	}
+}
