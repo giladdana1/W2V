@@ -1,0 +1,40 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+			int i = 0;
+        	int largest = Int32.MinValue;
+			int secondLargest = Int32.MinValue;
+			int size = 0;
+
+		    //array declaration
+			Console.WriteLine("Enter array size ");
+			size = int.Parse(Console.ReadLine());
+            int[] arr = new int[size];
+			
+			//reading array elements 
+            Console.WriteLine("Enter array elements : ");
+            for (i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+
+			for( i = 0; i < arr.Length; i++ ) {
+					// Is it the largest?
+					if( arr[i] > largest ) {
+						// Make the old largest the new secondLargest.
+						secondLargest = largest;
+						// This is the new largest.
+						largest = arr[i];
+					}
+					// It's not the largest, is it the 2nd largest?
+					else if( arr[i] > secondLargest ) {
+						secondLargest = arr[i];
+					}
+				}//finally, we will have largest element, printing here*/
+            Console.WriteLine("Largest = {0}, Second large = {1}", largest, secondLargest);
+							 			
+	}
+}
