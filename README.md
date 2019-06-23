@@ -15,8 +15,8 @@ steps to set up environment for running the automation test (using TypeScript)
 1. install typescript running this command (npm install -g typescript)
 2. navigate to the folder with the two files conf.js and test.js using command line
 3. run the command (tsc --init) that will create for you the tsconfig.json file
-  a. edit the file
-  b. add "allowJs": true, (Allow javascript files to be compiled.)
-  c. add  "outDir": "dist",  (this will careate a copy of the javascript file in dist directory)
+  a. edit the file.
+  b. add "allowJs": true, (Allow javascript files to be compiled.).
+  c. add  "outDir": "dist",  (this will careate a copy of the javascript file in dist directory).
 4. run the command tsc --> conf and test files created in the dist directory
 5. run the command (protractor dist/conf.js)
