@@ -1,6 +1,4 @@
 
-// This is a test case example of go to eCommerce Site and click on a Product.
-
 describe("Go to the Homepage ", function(){
    browser.ignoreSynchronization=true; // This allows to protractor to run on regular website, not specific to angular 
    
